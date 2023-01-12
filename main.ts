@@ -75,6 +75,7 @@ function transfer (json: XmlEvent[]): Map<string, Sign> {
 
     if (existingSign) sign = existingSign
 
+    // Set the sign data, according to the sign type
     if (row.lanelocation !== undefined) {
       sign.uuid = row.sign_id.uuid._text
       sign.km = Number(row.lanelocation.km._text)
