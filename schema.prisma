@@ -1,0 +1,22 @@
+datasource db {
+  url      = env("DATABASE_URL")
+  provider = "mysql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Sign {
+  uuid           String   @id
+  type           TinyInt
+  road           String
+  carriageway    String
+  lane           Int
+  km             Float
+  speedLimit     Int?
+  isFlashing     Boolean?
+  hasRedRing     Boolean?
+  arrowDirection Int?
+  updatedAt      DateTime @default(now())
+}

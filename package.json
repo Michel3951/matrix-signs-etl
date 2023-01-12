@@ -1,0 +1,25 @@
+{
+  "name": "matrix-tool",
+  "version": "1.0.0",
+  "description": "Tool to fetch the latest matrix sign information.",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.7.1",
+    "@types/node": "^18.11.11",
+    "axios": "^1.2.1",
+    "dotenv": "^16.0.3",
+    "gunzip-file": "^0.1.1",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/xml-js": "^1.0.0",
+    "prisma": "^4.7.1"
+  }
+}
